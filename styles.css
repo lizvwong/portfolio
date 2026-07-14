@@ -1,3 +1,31 @@
+:root {
+  --color-dominant: #f2f4f0;
+  --color-secondary: #496831;
+  --color-accent: #c5d2bb;
+  
+  --text-on-dominant: #496831;
+  --text-on-secondary: #ffffff;
+  --text-on-accent: #000000;
+}
+
+body {
+    background-color: var(--color-dominant);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.branch_right_overlay {
+    position:fixed;
+    right:0px;
+    top:0px;
+    z-index:9999;
+}
+
+.branch_left_overlay {
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:9999;
+}
 .main-page {
     height: 100vh;
 }
@@ -8,14 +36,24 @@
 
 .sideNav {
     list-style-type: none;
-    justify-content: center;
+}
+
+.sideNav li {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;;
+    border-bottom: 1px solid rgb(193, 193, 193);
+    max-width: 75%;
 }
 
 .sideHeader{
-    background-color: blanchedalmond;
+    background-color: var(--color-accent);
     text-align: center;
     margin: 15px;
     padding: 5px 0 5px 0;
+    box-shadow: lab(0% 0 0 / 0.2) 5px 5px ;
+    border: solid lab(100% 0.01 -0.01 / 0.2) 2px;
+
+    color: var(--text-on-accent);
 }
 
 .logo {
@@ -25,25 +63,25 @@
 
 #main {
     display: flex;
-    background-color: aquamarine;
+    background-color: var(--color-dominant);
     max-width: 1000px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 125px;
+
+    box-shadow: hsla(0, 0%, 61%, 0.5) 0px 0px 10px ;
 
 }
 
 #sidebar {
-    background-color: coral;
+    background-color: var(--color-accent);
     max-width: 200px;
     flex: 1 1 0;
-    height: 500px;
+    /* height: 500px; */
 }
 
 
 #center {
-    flex: 1 1 0;
-    overflow-y: auto;
-    background-color:rgb(131, 158, 255);
+    flex: 1 1 0;;
 }
 
 .introduction {
@@ -58,7 +96,6 @@
 }
 
 .introduction p {
-    background-color: rgb(255, 255, 255);
     flex: 1 1 0;
     margin: 50px 0px 50px 50px;
 }
