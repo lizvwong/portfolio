@@ -1,64 +1,74 @@
 :root {
-  --color-dominant: #f2f4f0;
-  --color-secondary: #496831;
-  --color-accent: #c5d2bb;
+  --color-dominant: #f4f2e7;
+  --color-secondary: #7358ad;
+  --color-accent: #ffc258;
   
   --text-on-dominant: #496831;
   --text-on-secondary: #ffffff;
-  --text-on-accent: #000000;
+  --text-on-accent: #1f1029;
+
+  --background: url('/images/tiles.PNG');
 }
 
 body {
-    background-color: var(--color-dominant);
+    /* background-color: var(--color-dominant); */
+    background-image: var(--background);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.branch_right_overlay {
-    position:fixed;
-    right:0px;
-    top:0px;
-    z-index:9999;
-}
-
-.branch_left_overlay {
-    position:fixed;
-    left:0px;
-    top:0px;
-    z-index:9999;
-}
-.main-page {
-    height: 100vh;
-}
-
 #header {
-    background-color: rgb(195, 210, 195);
+    background-color: var(--color-secondary);
+    color: var(--text-on-secondary);
+
+    text-align: center;
+    box-shadow: rgb(73, 73, 73, 0.5) 0px 0px 10px ;
+    border-radius: 50px;
+    position: fixed;
+    width: 100vw;
+}
+
+
+#header h1 {
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+#header h2 {
+    font-size: 15px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+#sidebar {
+    background-color: var(--color-accent);
+    max-width: 200px;
+    flex: 1 1 0;
+    padding-top:50px;
 }
 
 .sideNav {
-    list-style-type: none;
+    list-style-type:circle;
 }
 
 .sideNav li {
     margin: 0 0 10px 0;
-    padding-bottom: 5px;;
+    padding-bottom: 5px;
     border-bottom: 1px solid rgb(193, 193, 193);
     max-width: 75%;
+    color: var(--text-on-accent);
 }
 
 .sideHeader{
     background-color: var(--color-accent);
     text-align: center;
-    margin: 15px;
     padding: 5px 0 5px 0;
-    box-shadow: lab(0% 0 0 / 0.2) 5px 5px ;
-    border: solid lab(100% 0.01 -0.01 / 0.2) 2px;
-
-    color: var(--text-on-accent);
+    box-shadow: rgb(73, 73, 73, 0.5) 0px 2px 5px ;
+    background-color:var(--color-dominant);
+    color: var(--text-on-dominant);
+    font-size: 20px;
+    margin: 0 -15px 0 -15px;
 }
 
-.logo {
-    text-align: center;
-}
 
 
 #main {
@@ -66,22 +76,20 @@ body {
     background-color: var(--color-dominant);
     max-width: 1000px;
     margin: auto;
-    margin-top: 125px;
+    padding-top: 125px;
+    border: solid var(--color-secondary) 1px;
 
-    box-shadow: hsla(0, 0%, 61%, 0.5) 0px 0px 10px ;
+    box-shadow: rgb(73, 73, 73, 0.5) 0px 0px 10px ;
+    
 
 }
 
-#sidebar {
-    background-color: var(--color-accent);
-    max-width: 200px;
-    flex: 1 1 0;
-    /* height: 500px; */
-}
 
 
 #center {
-    flex: 1 1 0;;
+    flex: 1 1 0;
+
+    padding-top:50px;
 }
 
 .introduction {
@@ -159,4 +167,14 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
+}
+
+#footer {
+    background-color: var(--color-secondary);
+    color: var(--text-on-secondary);
+    text-align: center;
+    padding: 20px;
+    margin: 0 -10px -10px -10px;
+    line-height: 0.5;
+    font-size: small;
 }
