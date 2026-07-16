@@ -1,13 +1,16 @@
 :root {
   --color-dominant: #f4f2e7;
-  --color-secondary: #7358ad;
-  --color-accent: #ffc258;
+  --color-secondary: #40712c;
+  --color-accent: #d4e3a9;
   
   --text-on-dominant: #496831;
   --text-on-secondary: #ffffff;
   --text-on-accent: #1f1029;
 
   --background: url('/images/tiles.PNG');
+}
+a {
+    text-decoration: none;
 }
 
 body {
@@ -94,11 +97,12 @@ body {
 
 .introduction {
     display: flex;
+    align-items: center;
 }
 
 .img-placeholder {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     background-color: rgb(125, 125, 125);
     margin: 50px;
 }
@@ -106,6 +110,8 @@ body {
 .introduction p {
     flex: 1 1 0;
     margin: 50px 0px 50px 50px;
+    text-align: right;
+    
 }
 
 .bigButtons {
@@ -114,9 +120,10 @@ body {
     flex-direction: column;
 }
 .SpriteWork {
-    background-color: chartreuse;
+    background-image: url(/images/sprites/adastreia_thumbnail.jpg);
     height: 200px;
     width: 70%;
+    background-position: 0 -75px;
     flex-shrink: 1;
     margin-left: auto;
     display:flex;
@@ -125,7 +132,10 @@ body {
 }
 
 .Illustrations{
-    background-color: chartreuse;
+    background-image: url(/images/illustrations/ogen_2021.jpg);
+    background-size: cover;
+
+    background-position: 0 -170px;
     height: 200px;
     width: 70%;
     flex-shrink: 1;
@@ -136,38 +146,30 @@ body {
 }
 
 
-.Animations{
-    background-color: chartreuse;
+.VideoArt{
+    background-image: url(/images/video_art/sunshineisbrief_thumbnail.jpg);
+    background-size: cover;
     height: 200px;
     width: 70%;
     flex-shrink: 1;
     margin-left: auto;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.VideoArt{
-    background-color: chartreuse;
-    height: 200px;
-    width: 70%;
-    flex-shrink: 1;
-    margin-right: auto;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
 .Modeling{
-    background-color: chartreuse;
+    background-image: url(/images/3D_modeling/surrealworld_thumbnail.jpg);
+    background-size: cover;
     height: 200px;
     width: 70%;
     flex-shrink: 1;
-    margin-left: auto;
+    margin-right: auto;
     display:flex;
     align-items: center;
     justify-content: center;
 }
+
 
 #footer {
     background-color: var(--color-secondary);
@@ -177,4 +179,33 @@ body {
     margin: 0 -10px -10px -10px;
     line-height: 0.5;
     font-size: small;
+}
+
+.bigButtons h3 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: x-large;
+    background-color: var(--color-secondary);
+    color: var(--text-on-secondary);
+    padding: 5px 30px 5px 30px;
+}
+
+.center_flex{
+    display:flex;
+    padding: 50px;
+    align-items: center;
+}
+.left {
+    flex: 1 1 0;
+    margin-right: 15px;
+
+}
+
+.right{
+    flex: 1 1 0;
+    
+h2{
+    background-color: var(--color-accent);
+    padding: 10px;
+    color: var(--text-on-accent);
 }
