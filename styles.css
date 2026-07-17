@@ -7,7 +7,7 @@
   --text-on-secondary: #ffffff;
   --text-on-accent: #1f1029;
 
-  --background: url('/images/tiles.PNG');
+  --background: url('images/tiles.PNG');
 }
 a {
     text-decoration: none;
@@ -108,7 +108,7 @@ body {
 .img-placeholder {
     width: 300px;
     height: 200px;
-    background-image: url(/images/me.jpg);
+    background-image: url(images/me.jpg);
     background-size: cover;
     background-position: 0 -15px;
     margin: 50px;
@@ -127,7 +127,7 @@ body {
     flex-direction: column;
 }
 .SpriteWork {
-    background-image: url(/images/sprites/adastreia_thumbnail.jpg);
+    background-image: url(images/sprites/adastreia_thumbnail.jpg);
     height: 200px;
     width: 70%;
     background-position: 0 -75px;
@@ -139,7 +139,7 @@ body {
 }
 
 .Illustrations{
-    background-image: url(/images/illustrations_images/wisteria.PNG);
+    background-image: url(images/illustrations_images/wisteria.PNG);
     background-size: cover;
 
     background-position: 0 -170px;
@@ -154,7 +154,7 @@ body {
 
 
 .VideoArt{
-    background-image: url(/images/video_art_videos/sunshineisbrief_thumbnail.jpg);
+    background-image: url(images/video_art_videos/sunshineisbrief_thumbnail.jpg);
     background-size: cover;
     height: 200px;
     width: 70%;
@@ -166,7 +166,7 @@ body {
 }
 
 .Modeling{
-    background-image: url(/images/3D_modeling/surrealworld_thumbnail.jpg);
+    background-image: url(images/3D_modeling/surrealworld_thumbnail.jpg);
     background-size: cover;
     height: 200px;
     width: 70%;
