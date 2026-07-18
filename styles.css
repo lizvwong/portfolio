@@ -17,6 +17,7 @@ body {
     /* background-color: var(--color-dominant); */
     background-image: var(--background);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 #header {
